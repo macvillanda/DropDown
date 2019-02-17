@@ -106,6 +106,7 @@ class ViewController: UIViewController {
 		let appearance = DropDown.appearance()
 		
 		appearance.cellHeight = 60
+        appearance.dropDownHeight = 40
 		appearance.backgroundColor = UIColor(white: 1, alpha: 1)
 		appearance.selectionBackgroundColor = UIColor(red: 0.6494, green: 0.8155, blue: 1.0, alpha: 0.2)
 //		appearance.separatorColor = UIColor(white: 0.7, alpha: 0.8)
@@ -202,6 +203,7 @@ class ViewController: UIViewController {
 	
 	func setupAmountDropDown() {
 		amountDropDown.anchorView = amountButton
+        amountDropDown.dropDownHeight = 100
 		
 		// By default, the dropdown will have its origin on the top left corner of its anchor view
 		// So it will come over the anchor view and hide it completely
